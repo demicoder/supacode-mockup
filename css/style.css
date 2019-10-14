@@ -125,7 +125,8 @@ body {
 	width: 24.5%;
 	margin-right: 10%;
 }
-.hero-img img{
+
+.hero-img img {
 	border: 8px #fff solid;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	transform: rotate(8deg);
@@ -178,6 +179,11 @@ body {
 .topic h1 {
 	font-size: 2rem;
 	line-height: 2;
+}
+
+.topic h1 a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .topic p {
@@ -241,7 +247,7 @@ body {
 	display: flex;
 	margin: 4rem 0;
 	/*box-shadow: -2px 16px 20px -16px rgba(0,0,0,.5);*/
-	box-shadow: 0 0 10px 2px rgba(0,0,0,.09);
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, .09);
 	background: #fff;
 }
 
@@ -255,3 +261,13 @@ body {
 	font-size: 2rem;
 }
 
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) {}
+
+@media (max-width: 950px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 576px) {}
