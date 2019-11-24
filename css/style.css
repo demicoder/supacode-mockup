@@ -186,7 +186,7 @@ body {
           box-shadow: 0 4px 10px 0 rgba(208, 125, 1, 0.45);
 }
 
-/* Subjects */
+/* Topics */
 .topics-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,25 +213,29 @@ body {
   overflow: hidden;
 }
 
-.topic-head a img {
+.topic__preview {
   width: 100%;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
 
-.topic-head a:hover img {
+.topic__preview:hover {
   width: 100%;
   -webkit-filter: grayscale(2);
           filter: grayscale(2);
 }
 
-.topic-head a {
+.topic__head {
   text-decoration: none;
   font-weight: inherit;
   color: inherit;
 }
 
-.topic-head a h2 {
+.topic__head a {
+  color: inherit;
+}
+
+.topic__head a h2 {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   margin: 0 1rem;
@@ -240,11 +244,11 @@ body {
   font-weight: 600;
 }
 
-.topic-head a:hover h2 {
+.topic__head a h2:hover {
   color: #f70;
 }
 
-.topic-body {
+.topic__body {
   padding: 0 1rem 1rem 1rem;
 }
 
