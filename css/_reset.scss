@@ -2,10 +2,14 @@
   padding: 0;
   margin: 0;
   border: none;
-  font-size: 100%;
+
+  font: {
+    size: 100%;
+    weight: 100%;
+  }
+
   box-sizing: border-box;
   max-width: 100%;
-  font-weight: normal;
 }
 
 article,
