@@ -88,6 +88,8 @@ body {
   margin-left: 1rem;
   color: #444;
   padding: 10px 0;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .main-nav li a:hover {
@@ -95,8 +97,24 @@ body {
 }
 
 .main-nav .active-link {
+  background: #f70;
+  border: 1px solid #f70;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(255, 124, 16, 0.45);
+          box-shadow: 0 4px 10px 0 rgba(255, 124, 16, 0.45);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
   padding: 10px 15px;
   color: #fff;
+}
+
+.main-nav .active-link:hover {
+  background: #d17e01;
+  border-color: #d17e01;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(208, 125, 1, 0.45);
+          box-shadow: 0 4px 10px 0 rgba(208, 125, 1, 0.45);
 }
 
 .main-nav .active-link:hover {
