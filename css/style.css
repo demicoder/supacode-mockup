@@ -63,7 +63,6 @@ body {
           justify-content: space-between;
 }
 
-/* Utility classes */
 /* Main Header */
 .main-header {
   background: #fff;
@@ -113,7 +112,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.hero .hero__img {
+.hero__img {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
@@ -121,7 +120,7 @@ body {
   margin-right: 8%;
 }
 
-.hero .hero__img img {
+.hero__img img {
   border: 8px #fff solid;
   -webkit-box-shadow: -2px 0 20px -14px black;
           box-shadow: -2px 0 20px -14px black;
@@ -129,25 +128,25 @@ body {
           transform: rotate(6deg);
 }
 
-.hero .hero__desc {
+.hero__desc {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   line-height: 2.3;
 }
 
-.hero .hero__desc h2 {
+.hero__desc h2 {
   font-size: 320%;
   font-weight: 600;
 }
 
-.hero .hero__desc p {
+.hero__desc p {
   color: #616161;
   margin-bottom: 2%;
   font-size: 110%;
 }
 
-.hero .hero__btn {
+.hero__btn {
   background: #f70;
   border: 1px solid #f70;
   -webkit-box-shadow: 0 4px 10px 0 rgba(255, 124, 16, 0.45);
@@ -162,7 +161,7 @@ body {
   color: #fff;
 }
 
-.hero .hero__btn:hover {
+.hero__btn:hover {
   background: #d17e01;
   border-color: #d17e01;
   -webkit-box-shadow: 0 4px 10px 0 rgba(208, 125, 1, 0.45);
