@@ -152,24 +152,23 @@ body {
 
 /* Footer */
 
-.main-footer {
+.main__footer {
   text-align: center;
   margin: 4% 0;
-}
-
-.main-footer-nav li {
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-
-.main-footer-nav li a {
-  color: $primary-color;
-  text-decoration: none;
-}
-
-.main-footer-nav li a:hover,
-.main-footer-nav .active-link {
-  text-decoration: underline;
+  &--nav {
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+    }
+    li a {
+      color: $primary-color;
+      text-decoration: none;
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 /* Sidenav */

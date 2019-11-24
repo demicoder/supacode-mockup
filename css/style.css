@@ -253,23 +253,22 @@ body {
 }
 
 /* Footer */
-.main-footer {
+.main__footer {
   text-align: center;
   margin: 4% 0;
 }
 
-.main-footer-nav li {
+.main__footer--nav li {
   display: inline-block;
   margin: 0 0.5rem;
 }
 
-.main-footer-nav li a {
+.main__footer--nav li a {
   color: #f70;
   text-decoration: none;
 }
 
-.main-footer-nav li a:hover,
-.main-footer-nav .active-link {
+.main__footer--nav li a:hover, .main__footer--nav li a:active {
   text-decoration: underline;
 }
 
