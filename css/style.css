@@ -128,6 +128,7 @@ body {
   display: flex;
   padding: 5rem 0;
   margin-bottom: 4rem;
+  height: 90vh;
 }
 
 .hero__img {
@@ -140,8 +141,8 @@ body {
 
 .hero__img img {
   border: 8px #fff solid;
-  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   -webkit-transform: rotate(6deg);
           transform: rotate(6deg);
 }
@@ -226,10 +227,12 @@ body {
   width: 100%;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-}
-
-.topic__preview:hover {
-  width: 100%;
+  /*
+    &:hover {
+      width: 100%;
+      filter: grayscale(2);
+    }
+  */
 }
 
 .topic__head {
