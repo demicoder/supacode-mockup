@@ -1,6 +1,6 @@
-@import '_variables';
-@import '_reset';
-@import '_mixins';
+@import "_variables";
+@import "_reset";
+@import "_mixins";
 
 body {
   line-height: 1;
@@ -70,7 +70,7 @@ body {
 
     img {
       border: 8px $white solid;
-      box-shadow: -2px 0 20px -14px rgba(0, 0, 0, 1);
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
       transform: rotate(6deg);
     }
   }
@@ -88,7 +88,7 @@ body {
 
     p {
       color: #616161;
-      margin-bottom: 2%;
+      margin-bottom: 5%;
       font-size: 110%;
     }
   }
@@ -119,14 +119,17 @@ body {
   line-height: 1.8;
   border-radius: 5px;
   overflow: hidden;
-
+  transition: 0.4s cubic-bezier(0.5, 2, 0.6, 1), box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
   &__preview {
     width: 100%;
     transition: 0.4s ease-out;
 
     &:hover {
       width: 100%;
-      filter: grayscale(2);
+      // filter: grayscale(2);
     }
   }
 
@@ -140,7 +143,7 @@ body {
 
       h2 {
         transition: 0.4s ease-out;
-        margin: 0 1rem;
+        margin: 0.2rem 1rem;
         display: inline-block;
         font-size: 150%;
         font-weight: 600;
@@ -285,7 +288,8 @@ body {
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 @media (max-width: 600px) {
   .hero {

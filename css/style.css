@@ -140,8 +140,8 @@ body {
 
 .hero__img img {
   border: 8px #fff solid;
-  -webkit-box-shadow: -2px 0 20px -14px black;
-          box-shadow: -2px 0 20px -14px black;
+  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
   -webkit-transform: rotate(6deg);
           transform: rotate(6deg);
 }
@@ -160,7 +160,7 @@ body {
 
 .hero__desc p {
   color: #616161;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   font-size: 110%;
 }
 
@@ -211,6 +211,15 @@ body {
   line-height: 1.8;
   border-radius: 5px;
   overflow: hidden;
+  -webkit-transition: 0.4s cubic-bezier(0.5, 2, 0.6, 1), -webkit-box-shadow 0.3s ease;
+  transition: 0.4s cubic-bezier(0.5, 2, 0.6, 1), -webkit-box-shadow 0.3s ease;
+  transition: 0.4s cubic-bezier(0.5, 2, 0.6, 1), box-shadow 0.3s ease;
+  transition: 0.4s cubic-bezier(0.5, 2, 0.6, 1), box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.topic:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .topic__preview {
@@ -221,8 +230,6 @@ body {
 
 .topic__preview:hover {
   width: 100%;
-  -webkit-filter: grayscale(2);
-          filter: grayscale(2);
 }
 
 .topic__head {
@@ -238,7 +245,7 @@ body {
 .topic__head a h2 {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-  margin: 0 1rem;
+  margin: 0.2rem 1rem;
   display: inline-block;
   font-size: 150%;
   font-weight: 600;
