@@ -3,9 +3,9 @@
   border: 1px solid $primary-color;
   box-shadow: 0 4px 10px 0 rgba(255, 124, 16, 0.45);
   border-radius: 5px;
-  color: #fff;
+  color: $white;
   text-decoration: none;
-  transition: 0.4s ease-out;
+
 
   &:hover {
     background: #d17e01;

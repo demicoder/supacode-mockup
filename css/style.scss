@@ -17,7 +17,7 @@ body {
 }
 
 /* Main Header */
-.main-header {
+.main__header {
   background: $white;
   padding: 2rem;
   box-shadow: 0 2px 5px rgba(190, 190, 190, 0.5);
@@ -28,7 +28,7 @@ body {
 }
 
 /* Main Navbar */
-.main-nav {
+.main__nav {
   li {
     display: inline-block;
     padding-left: 1rem;
@@ -46,10 +46,12 @@ body {
     }
   }
 
-  .active-link {
+  .main__nav--active-link {
     @include btn-primary;
-    padding: 10px 15px;
-    color: $white;
+    padding: {
+      right: 15px;
+      left: 15px;
+    } 
 
     &:hover {
       text-decoration: none;
@@ -104,7 +106,7 @@ body {
 
 /* Topics */
 
-.topics-grid {
+.topics__grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -227,104 +229,3 @@ body {
   font-size: 2rem;
 }
 
-@media (max-width: 1200px) {
-  .row {
-    padding: 0 2rem;
-  }
-
-  .hero-desc p {
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 1100px) {
-  .hero-img {
-    flex: 0.5;
-    margin-right: 6%;
-  }
-
-  .hero-desc h2 {
-    font-size: 250%;
-  }
-
-  .row {
-    padding: 0 3rem;
-  }
-}
-
-@media (max-width: 950px) {
-  .hero__img {
-    flex: 0.6;
-    padding-top: 2.5%;
-  }
-
-  .topic {
-    width: 48%;
-  }
-}
-
-@media (max-width: 860px) {
-  .hero {
-    &__desc {
-      h2 {
-        font-size: 150%;
-      }
-    }
-
-    &__img {
-      padding-top: 0;
-      flex: 0.7;
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .hero {
-    &__desc p {
-      p {
-        font-size: 100%;
-      }
-    }
-
-    &__img {
-      margin-top: 2%;
-    }
-  }
-}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 600px) {
-  .hero {
-    padding-top: 12%;
-    display: block;
-    margin-bottom: 0;
-
-    &__img {
-      text-align: center;
-      display: block;
-      margin: auto;
-      margin-bottom: 5%;
-      width: 50%;
-    }
-
-    &__desc {
-      text-align: center;
-
-      p {
-        margin-bottom: 5%;
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .row {
-    padding: 0 2rem;
-  }
-
-  .topic {
-    width: 100%;
-    margin-bottom: 2.5rem;
-  }
-}
