@@ -4,13 +4,13 @@
 
 body {
   line-height: 1;
-  background: #e0e0e0;
+  background: $body-color;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .row {
-  max-width: 1200px;
+  max-width: $page-width;
   margin: auto;
   align-items: center;
   justify-content: space-between;
@@ -18,12 +18,18 @@ body {
 
 /* Main Header */
 .main__header {
+  @include main-header;
+  background: transparent;
+  padding: 2.5rem;
+}
+
+.main__header--scrolled {
+  @include main-header;
   background: $white;
   padding: 2rem;
   box-shadow: 0 2px 5px rgba(190, 190, 190, 0.5);
-
   .row {
-    display: flex;
+    max-width: $page-width + 50;
   }
 }
 
@@ -51,7 +57,7 @@ body {
     padding: {
       right: 15px;
       left: 15px;
-    } 
+    }
 
     &:hover {
       text-decoration: none;
@@ -62,7 +68,7 @@ body {
 /* Hero */
 .hero {
   display: flex;
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
   margin-bottom: 4rem;
   height: 90vh;
 
@@ -189,43 +195,3 @@ body {
     }
   }
 }
-
-/* Sidenav */
-
-.sidenav {
-  background: #e7e7e7;
-  flex: 0.3;
-}
-
-.sidenav li a {
-  display: block;
-  padding: 5%;
-  text-decoration: none;
-  transition: 0.4s ease-out background;
-  color: #444;
-  font-weight: 550;
-}
-
-.sidenav li .active-link {
-  background: #efefef;
-}
-
-/* Topic page */
-
-.post-page {
-  display: flex;
-  margin: 4rem 0;
-  background: $white;
-  border: solid #d4d4d4 1px;
-}
-
-.post-body {
-  flex: 1;
-  line-height: 2;
-  padding: 1rem 2rem;
-}
-
-.post-body h1 {
-  font-size: 2rem;
-}
-

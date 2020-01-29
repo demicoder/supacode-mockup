@@ -6,10 +6,23 @@
   color: $white;
   text-decoration: none;
 
-
   &:hover {
     background: #d17e01;
     border-color: #d17e01;
     box-shadow: 0 4px 10px 0 rgba(208, 125, 1, 0.45);
+  }
+}
+
+@mixin main-header {
+  $transition: 0.4s ease-out;
+
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  transition: $transition;
+
+  .row {
+    transition: $transition;
+    display: flex;
   }
 }
