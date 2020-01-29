@@ -1,5 +1,5 @@
-const mainNav = document.querySelector("#main__header");
-const navScrollClass = "main__header--scrolled";
+const mainNav = document.querySelector('#main__header');
+const navScrollClass = 'main__header--scrolled';
 
 const fixNav = () => {
   const navHeight = mainNav.offsetHeight;
@@ -10,4 +10,4 @@ const fixNav = () => {
   }
 };
 
-window.addEventListener("scroll", fixNav);
+window.addEventListener('scroll', fixNav);
