@@ -11,3 +11,4 @@ const fixNav = () => {
 };
 
 window.addEventListener('scroll', fixNav);
+window.addEventListener('resize', fixNav);

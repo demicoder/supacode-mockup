@@ -1,15 +1,13 @@
 @mixin btn-primary {
   background: $primary-color;
   border: 1px solid $primary-color;
-  box-shadow: 0 4px 10px 0 rgba(255, 124, 16, 0.45);
   border-radius: 5px;
   color: $white;
   text-decoration: none;
 
   &:hover {
-    background: #d17e01;
-    border-color: #d17e01;
-    box-shadow: 0 4px 10px 0 rgba(208, 125, 1, 0.45);
+    background: transparent;
+    color: $primary-color;
   }
 }
 

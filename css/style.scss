@@ -1,12 +1,12 @@
-@import "_variables";
-@import "_reset";
-@import "_mixins";
+@import '_variables';
+@import '_reset';
+@import '_mixins';
 
 body {
   line-height: 1;
   background: $body-color;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .row {
@@ -16,20 +16,32 @@ body {
   justify-content: space-between;
 }
 
+.section {
+  margin-bottom: 2rem;
+}
+.section h2 {
+  font-size: 2rem;
+}
+
 /* Main Header */
 .main__header {
   @include main-header;
   background: transparent;
   padding: 2.5rem;
+
+  .logo {
+    max-width: 180px;
+  }
 }
 
 .main__header--scrolled {
   @include main-header;
-  background: $white;
+  background: #fff;
   padding: 2rem;
-  box-shadow: 0 2px 5px rgba(190, 190, 190, 0.5);
+  box-shadow: 0 2px 10px rgba(190, 190, 190, 0.5);
+
   .row {
-    max-width: $page-width + 50;
+    max-width: $page-width + 20;
   }
 }
 
@@ -48,12 +60,14 @@ body {
     transition: 0.4s ease-out;
 
     &:hover {
-      text-decoration: underline;
+      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
     }
   }
 
   .main__nav--active-link {
     @include btn-primary;
+    color: #fff;
     padding: {
       right: 15px;
       left: 15px;
@@ -68,9 +82,11 @@ body {
 /* Hero */
 .hero {
   display: flex;
-  padding: 10rem 0 5rem 0;
-  margin-bottom: 4rem;
-  height: 90vh;
+  padding: {
+    top: 3rem;
+  }
+  height: 100vh;
+  align-items: center;
 
   &__img {
     flex: 0.5;
@@ -78,7 +94,7 @@ body {
     margin-right: 8%;
 
     img {
-      border: 8px $white solid;
+      border: 8px #fff solid;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       transform: rotate(6deg);
     }
@@ -106,7 +122,8 @@ body {
     @include btn-primary;
     padding: 1% 3%;
     display: inline-block;
-    color: $white;
+    color: #fff;
+    transition: 0.3s ease-out;
   }
 }
 
@@ -122,7 +139,7 @@ body {
 .topic {
   width: 30%;
   max-width: 95%;
-  background: $white;
+  background: #fff;
   margin-bottom: 2rem;
   box-shadow: -2px 6px 16px -14px rgba(0, 0, 0, 0.5);
   line-height: 1.8;
