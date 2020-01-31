@@ -20,7 +20,7 @@ body {
   margin-bottom: 3rem;
 }
 .section__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 3;
 }
 
@@ -83,15 +83,16 @@ body {
 /* Hero */
 .hero {
   display: flex;
+  color: #585858;
   padding: {
     top: 3rem;
   }
+
   height: 100vh;
   align-items: center;
 
   &__img {
-    flex: 0.5;
-    width: 25%;
+    width: 30%;
     margin-right: 8%;
 
     img {
@@ -103,19 +104,22 @@ body {
 
   &__desc {
     flex: 1;
-    line-height: 2.3;
+    line-height: 2;
 
     h2 {
+      margin-bottom: 1rem;
+
       font: {
-        size: 320%;
-        weight: 600;
+        weight: 500;
+        size: 300%;
       }
     }
 
     p {
       color: #616161;
       margin-bottom: 5%;
-      font-size: 110%;
+      font-size: 24px;
+      font-weight: 400;
     }
   }
 
@@ -144,11 +148,15 @@ body {
 .blogpost {
   width: 30%;
   background: #fff;
-  padding: 1rem;
-  box-shadow: -2px 6px 16px -14px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 6px 16px -14px rgba(0, 0, 0, 0.7);
 
   &__preview {
-    border: 1px solid #ddd;
+    &--img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__head {
@@ -158,14 +166,13 @@ body {
 
     a {
       color: inherit;
-
       h2 {
         transition: 0.4s ease-out;
-        margin: 0.5rem 0;
         display: inline-block;
         font-size: 120%;
         font-weight: 700;
         line-height: 1.5;
+        padding: 0.5rem 1rem;
         &:hover {
           color: $primary-color;
         }
@@ -175,6 +182,8 @@ body {
 
   &__body {
     line-height: 1.5;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
   }
 }
 
